@@ -6,7 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Material Design for Bootstrap</title>
     <!-- MDB icon -->
-    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./logo.png" type="image/x-icon" />
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -29,7 +29,7 @@
             <!-- Left elements -->
             <div class="col-lg-2 col-sm-4 col-4">
               <a href="#" target="_blank" class="float-start">
-                <img src="logo.png" height="92" width="35"  />
+                <img src="##################################################logo######################################################################################" height="35"  />
               </a>
             </div>
             <!-- Left elements -->
