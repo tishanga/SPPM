@@ -7,22 +7,29 @@
         <!-- Left elements -->
         <div class="col-lg-2 col-sm-4 col-4">
           <a href="#" target="_blank" class="float-start">
-            <img src="website%20logo.png" height="35px"/>
+            <img src="./website logo.png" height="35px"/>
           </a>
         </div>
         <!-- Left elements -->
         <!-- Center elements -->
         <div class="order-lg-last col-lg-5 col-sm-8 col-8">
           <div class="d-flex float-end">
-            <a href="#" class="me-1 border rounded py-1 px-3 nav-link d-flex align-items-center" target="_blank"> <i class="fas fa-user-alt m-1 me-md-2"></i>
-              <p class="d-none d-md-block mb-0">Sign in</p>
+            <?php
+              if (isset($_SESSION['user_name'])) {
+                echo "<a href='./cart.php' class='border rounded py-1 px-3 nav-link d-flex align-items-center' target='_blank'> <i class='fas fa-shopping-cart m-1 me-md-2'></i><p class='d-none d-md-block mb-0'>My cart</p></a>";
+                echo "<a href='./user account.php' class='border rounded py-1 px-3 nav-link d-flex align-items-center' target='_blank'> <i class='fa-regular fa-user m-1 me-md-2'></i><p class='d-none d-md-block mb-0'>profile</p></a>";
+                echo "<a href='./logout.php' class='border rounded py-1 px-3 nav-link d-flex align-items-center' target='_blank'> <i class='fa-solid fa-right-from-bracket m-1 me-md-2'></i><p class='d-none d-md-block mb-0'> Log out</p></a>";
+
+
+              }else {
+                echo "<a href='./register_form.php' class='me-1 border rounded py-1 px-3 nav-link d-flex align-items-center' target='_blank'> <i class='fas fa-user-alt m-1 me-md-2'></i><p class='d-none d-md-block mb-0'>Sign in</p></a>";
+                echo "<a href='./login_form.php' class='me-1 border rounded py-1 px-3 nav-link d-flex align-items-center' target='_blank'> <i class='fas fa-user-alt m-1 me-md-2'></i> <p class='d-none d-md-block mb-0'>Log in</p>";
+              }
+            ?>
+            
+            
             </a>
-            <a href="#" class="me-1 border rounded py-1 px-3 nav-link d-flex align-items-center" target="_blank"> <i class="fas fa-user-alt m-1 me-md-2"></i>
-              <p class="d-none d-md-block mb-0">Log in</p>
-            </a>
-            <a href="#" class="border rounded py-1 px-3 nav-link d-flex align-items-center" target="_blank"> <i class="fas fa-shopping-cart m-1 me-md-2"></i>
-              <p class="d-none d-md-block mb-0">My cart</p>
-            </a>
+            
           </div>
         </div>
         <!-- Center elements -->
