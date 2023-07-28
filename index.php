@@ -53,19 +53,20 @@ session_start();
         //Assuming you have a database connection established
 
         // Query to retrieve product information from the database
-          $query = "SELECT p_name, p_price, p_picture, p_count FROM product LIMIT 12";
+          $query = "SELECT P_Name, P_Price, P_Picture FROM products LIMIT 12";
           $result = mysqli_query($conn, $query);
           //
           // Loop through the result set
-          // if ($result) {
+          // 
             // Initialize a counter
             // while ($row = mysqli_fetch_assoc($result) && $count < 12) {
               for ($i=0; $i < 12 ; $i++) {
                 $row = mysqli_fetch_assoc($result);
+                
             
-                $productName = $row['p_name'];
-                $price = $row['p_price'];
-                $productImage = $row['p_picture'];
+                $productName = $row['P_Name'];
+                $price = $row['P_Price'];
+                $productImage = $row['P_Picture'];
 
                 // Display the product information
                 
