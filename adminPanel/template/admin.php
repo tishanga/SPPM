@@ -19,7 +19,7 @@ $dataPoints = array(
 ?>
 
 <!DOCTYPE html>
-<!-- Coding by CodingNepal | www.codingnepalweb.com -->
+
 <html lang="en" dir="ltr">
 
 <head>
